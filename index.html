@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+     <head>
+          <title>Registro</title>
+     </head>
+     <body>
+        <header class="header">
+<nav class="nav">
+    <a href="#">Numero de Contacto</a>
+    <a href="#reglamento">Reglamento del jugador</a>
+    <a href="#dirrecion">Datos personales</a>
+    <a href="#ajax_img">Foto del organizador</a>
+    <a href="#message">Comentario</a>
+</nav>
+        </header>
+          <h1 style="color: brown;"> FORMULARIO DE REGISTRO DEL JUGADOR</h1>
+          <fieldset>
+            <legend> Datos personales</legend>
+            <br>
+            <div>
+            <img class="ajax-img" id="ajax_img" src="https://upload.wikimedia.org/wikipedia/en/7/79/Ajax_Amsterdam.svg" alt="ajax" width="300" height="300" align="right"/>
+          <form action="contact.php" method="post">
+               <div class="datos">
+                    <label for="name">Primer Nombre</label>
+                    <input
+                         type="text"
+                         id="name"
+                         name="jugador_name"
+                         placeholder="David"
+                         pattern="[A-Z\sa-z]{3,20}"
+                         required
+                    />
+               </div>
+               <br />
+               <div class="datos">
+                    <label for="surname">Segundo Nombre</label>
+                    <input
+                         type="text"
+                         id="surname"
+                         name="jugador_surname"
+                         placeholder="Moya"
+                         required
+                    />
+               </div>
+               <br />
+               <div class="datos">
+                <label for="dirrecion">Dirrecion domiciliaria</label>
+                <input
+                     type="text"
+                     id="dirrecion"
+                     name="jugador_dirrecion"
+                     placeholder="portete y la 15"
+                     required
+                />
+           </div>
+           <br>
+               <div class="datos">
+                    <label for="email">Correo electrónico</label>
+                    <input
+                         type="email"
+                         id="email"
+                         name="jugador_email"
+                         placeholder="ejemplo@gmail.com"
+                         required
+                    />
+               </div>
+            <br>
+               <div class="datos">
+                    <label for="city">Ciudad</label>
+                    <input
+                         type="text"
+                         id="city"
+                         name="jugador_ciudad"
+                         placeholder="Guayaquil"
+                         required
+                    />
+               </div>
+               <br />
+               <label for="datos">Fecha de Nacimiento</label>
+          <input type="date"
+          id="nacimiento"
+          name="date_nacimiento">
+          <br>
+          <br>
+               <div class="datos">
+                    <label for="Genero">Genero</label>
+                    <select id="Genero" name="concerned_department" required>
+                         <option value="">Selecciona un genero</option>
+                         <option value="billing">Hombre</option>
+                         <option value="marketing">Mujer</option>
+                         <option value="technical support">Sin definir</option>
+                    </select>
+               </div>
+            </fieldset>
+               <br>
+               <br>
+               <hr>
+               <div class="elem-group">
+                    <h4>Posicion del jugador: </h4>
+                    <label for="arquero">Arquero</label>
+                    <input name="Posicion" id="arquero"
+                         type="radio"
+                    />
+                    <label for="defensa">Defensa</label>
+                    <input name="Posicion" id="defensa"
+                         type="radio"
+                    />
+                    <label for="medio_campo">Medio campo</label>
+                    <input name="Posicion" id="medio_campo"
+                         type="radio"
+                    />
+                    <label for="volante" >Volante</label>
+                    <input name="Posicion" id="volante"
+                         type="radio"
+                    />
+                    <label for="delantero">Delantero</label>
+                    <input name="Posicion" id="delantero"
+                         type="radio"
+                    />
+               </div>
+               <br>
+               <h4>En que equipos estuviste actualmente?</h4>
+               <h5>Escoga los equipos </h5>
+               <div class="elem-group">
+                 
+                <label for="barcelona">Barcelona</label>
+                <input name="equipo" id="barcelona"
+                     type="radio"
+                />
+                <label for="real_madrid">Real Madrid</label>
+                <input name="equipo" id="real_madrid"
+                     type="radio"
+                />
+                <label for="bayer_munich">Bayer Munich</label>
+                <input name="equipo" id="bayer_munich"
+                     type="radio"
+                />
+                <label for="manchester_city">Manchester City</label>
+                <input name="equipo" id="manchester_city"
+                     type="radio"
+                />
+                <label for="ajax">Ajax</label>
+                <input name="equipo" id="ajax"
+                     type="radio"
+                />
+           </div>
+           <div class="elem-group">
+            <h4>Talla del uniforme: </h4>
+            <label for="small">Small(S)</label>
+            <input name="Posicion" id="small"
+                 type="radio"
+            />
+            <label for="medium">Medium(M)</label>
+            <input name="Posicion" id="medium"
+                 type="radio"
+            />
+            <label for="large">Large(L)</label>
+            <input name="Posicion" id="large"
+                 type="radio"
+            />
+            <label for="extra_large" >Extra Large(XL)</label>
+            <input name="Posicion" id="volante"
+                 type="radio"
+            />
+            <label for="xxl">Extra Extra Large(XXL)</label>
+            <input name="Posicion" id="xxl"
+                 type="radio"
+            />
+       </div>
+       <br>
+       <hr>
+       <div id="reglamento">
+            <h4>Reglamento de jugador</h4>
+            Estas normas se aplican siempre que se haga referencia expresa a ellas en normas específicas que rigen las competiciones de clubes masculinas que se disputarán bajo los auspicios de la UEFA (en adelante: competiciones de clubes de la UEFA).
+<br>
+<br>
+            1.02
+<br>
+<br>
+Este reglamento regula los derechos, deberes y responsabilidades de todas las partes involucradas en el sistema de licencias de clubes de la UEFA (Parte II) y define en particular:
+
+    los requisitos mínimos que debe cumplir una federación miembro de la UEFA para actuar como otorgante de licencias para sus clubes, así como los procedimientos mínimos que debe seguir el otorgante de licencias en su evaluación de los criterios de concesión de licencias de clubes (Capítulo 1);
+
+    el solicitante de la licencia y la licencia necesaria para participar en las competiciones de clubes de la UEFA (Capítulo 2);
+
+    los criterios mínimos deportivos, de responsabilidad social futbolística, infraestructura, personal y administrativos, legales y financieros que debe cumplir un club para que su licenciante le conceda una licencia como parte del procedimiento de admisión para participar en las competiciones de clubes de la UEFA (Capítulo 3) .
+<br>
+<br>
+1.03
+<br>
+<br>
+Estas regulaciones rigen además los derechos, deberes y responsabilidades de todas las partes involucradas en el proceso de seguimiento de los clubes de la UEFA (Parte III) para promover los objetivos de sostenibilidad financiera de la UEFA y definen en particular:
+
+    el papel y las tareas del Órgano de Control Financiero de los Clubes de la UEFA, los procedimientos mínimos que deben seguir los licenciantes en sus evaluaciones de los requisitos de seguimiento de los clubes y las responsabilidades de los licenciatarios durante las competiciones de clubes de la UEFA (Capítulo 1);
+
+    los requisitos de seguimiento de clubes que deben cumplir los titulares de licencias admitidos en las competiciones de clubes de la UEFA (Capítulo 2).
+              </div>
+        <br>
+               <br>
+               <hr>
+               <br>
+               <fieldset>
+                    <legend><em> Contactar</em></legend>
+                    <br>
+    <div class="elem-group">
+                    <label for="title">Motivo de contacto</label>
+                    <input
+                         type="text"
+                         id="title"
+                         name="email_title"
+                         required
+                         placeholder="Problema/Consulta"
+                         pattern="[A-Za-z0-9\s]{8,60}"
+                    />
+               </div>
+               <br>
+               <br>
+               <div class="comentario">
+                    <label for="message">Comentario</label>
+                    <textarea
+                         id="message"
+                         name="visitor_message"
+                         placeholder="Escribe tu mensaje aquí."
+                         required
+                    ></textarea>
+                    <button type="submit">Enviar mensaje</button>
+               </div>
+               <br>
+          </form>
+     </fieldset>
+          <br>
+          <br>
+          <label for="date">Fecha de registro</label>
+          <input type="date"
+          id="date"
+          name="date_time">
+          <br>
+          <br>
+          <header class="header">
+            <nav class="nav">
+                <a href="#">Inicio</a>
+            </nav>
+            <br>
+          <div style="font-size: 1rem; display: inline-block; background-color: aliceblue; width: 300px; height: 300px; border: 20px solid black;"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/f/f5/UEFA_Champions_League.svg/800px-UEFA_Champions_League.svg.png" alt="Logo del torneo" width="300" height="300"></div>
+         <div style="font-size: 1rem; display: inline-block; background-color: brown; width: 300px; height: 300px; border: 20px solid red;"><img src="https://static.abc.es/media/cultura/2019/01/21/arquitectura-metropolitano-kYcF--1248x698@abc.jpg" alt="estadio donde se jugara el torneo" width="300" height="300"></div>
+     </div>
+     </body>
+</html>
+
